@@ -12,7 +12,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $stmt = $pdo->prepare("INSERT INTO contatos (nome, email, telefone) VALUES (?, ?, ?)");
         $stmt->execute([$nome, $email, $telefone]);
         
-        header("Location: index.php");
+        header("Location: ../index.php");
         exit;
     } else {
         echo "<center><p style='color:red;'>Nome e E-mail são obrigatórios!</p></center>";

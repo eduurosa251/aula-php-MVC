@@ -13,7 +13,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $stmt = $pdo->prepare("UPDATE contatos SET nome = ?, email = ?, telefone = ? WHERE id = ?");
     $stmt->execute([$nome, $email, $telefone, $id]);
 
-    header("Location: index.php");
+    header("Location: ../index.php");
     exit;
 }
 

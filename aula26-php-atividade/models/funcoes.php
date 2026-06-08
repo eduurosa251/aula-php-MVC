@@ -22,8 +22,8 @@ function exibirTabelaContatos(array $contatos): void {
         echo "<td>" . $c['email'] . "</td>";
         echo "<td>" . $c['telefone'] . "</td>";
         echo "<td>
-                <a href='editar_contato.php?id=" . $c['id'] . "'>Editar</a> | 
-                <a href='excluir_contato.php?id=" . $c['id'] . "'>Excluir</a>
+                <a href='views/editar_contato.php?id=" . $c['id'] . "'>Editar</a> | 
+                <a href='views/excluir_contato.php?id=" . $c['id'] . "'>Excluir</a>
               </td>";
         echo "</tr>";
     }

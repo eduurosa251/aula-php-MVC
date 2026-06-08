@@ -4,7 +4,7 @@ include "cabecalho.php";
 
 
 echo "<h3>Lista de Produtos</h3>";
-echo "<a href='cadastro_produto.php'>+ Adicionar Novo Produto</a><br><br>";
+echo "<a href='views/cadastro_produto.php'>+ Adicionar Novo Produto</a><br><br>";
 
 $stmt = $pdo->query("SELECT * FROM produtos");
 $produtos = $stmt->fetchAll();

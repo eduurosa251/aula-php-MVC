@@ -14,7 +14,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $stmt = $pdo->prepare("INSERT INTO clientes (nome, cpf, email, endereco) VALUES (?, ?, ?, ?)");
         $stmt->execute([$nome, $cpf, $email, $endereco]);
         
-        header("Location: clientes.php");
+        header("Location: ../clientes.php");
         exit;
     }
 }

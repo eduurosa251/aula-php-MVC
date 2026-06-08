@@ -10,11 +10,11 @@
         <h1>SISTEMA AGENDA</h1>
         
         <nav>
-            <a href="index.php">Contatos</a> 
+            <a href="/index.php">Contatos</a> 
             &nbsp;&nbsp;&bull;&nbsp;&nbsp; 
-            <a href="clientes.php">Clientes</a> 
+            <a href="/views/clientes.php">Clientes</a> 
             &nbsp;&nbsp;&bull;&nbsp;&nbsp; 
-            <a href="produtos.php">Produtos</a>
+            <a href="/views/produtos.php">Produtos</a>
         </nav>
     </center>
 </header>

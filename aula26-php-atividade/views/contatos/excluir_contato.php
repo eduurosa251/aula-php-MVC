@@ -9,7 +9,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $stmt = $pdo->prepare("DELETE FROM contatos WHERE id = ?");
     $stmt->execute([$id]);
 
-    header("Location: index.php");
+    header("Location: ../index.php");
     exit;
 }
 ?>

@@ -4,7 +4,7 @@ include "cabecalho.php";
 
 
 echo "<h3>Lista de Clientes</h3>";
-echo "<a href='cadastro_cliente.php'>+ Adicionar Novo Cliente</a><br><br>";
+echo "<a href='views/cadastro_cliente.php'>+ Adicionar Novo Cliente</a><br><br>";
 
 $stmt = $pdo->query("SELECT * FROM clientes");
 $clientes = $stmt->fetchAll();
